@@ -1,0 +1,27 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sprites-anim{
+    height: 119px;
+    width: 170px;
+    background: url(./dino.png) 0px 0px;
+    animation: play 0.7s steps(8) infinite,
+    steps 5s linear infinite;
+    position: absolute;
+    left: 0;
+}
+
+@keyframes play {
+    100% {
+        background-position: -1365px;
+    }
+}
+
+@keyframes steps {
+    100% {
+        left: 100%;
+    }
+}
